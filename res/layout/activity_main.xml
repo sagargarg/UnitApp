@@ -10,7 +10,7 @@
     tools:context="com.example.unitapp.MainActivity" >
 
     <TextView
-        android:id="@+id/text"
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -19,4 +19,28 @@
         android:textSize="25sp" 
         />
 
+     <TextView
+         android:id="@+id/overview"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/title"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="28dp"
+         android:text="Based on the speed at which you are going, change the units to something different"
+         android:gravity="center"
+         android:textColor="#fff"
+         android:textSize="20sp" />
+
+     <TextView
+         android:id="@+id/number"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/overview"
+         android:layout_below="@+id/overview"
+         android:layout_marginLeft="20dp"
+         android:layout_marginTop="44dp"
+         android:text="17"
+         android:textColor="#fff"
+         android:textSize="20sp" />
+    
 </RelativeLayout>
