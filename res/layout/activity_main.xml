@@ -1,10 +1,9 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/RelativeLayout1"
+    android:id="@+id/FrameLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#444"
-    android:gravity="top"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -26,68 +25,53 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+  	<TextView
+        android:id="@+id/title"
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Unit App"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+  	
     <TextView
         android:id="@+id/overview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/title"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="12dp"
-        android:layout_x="7dp"
-        android:layout_y="39dp"
+        android:layout_marginTop="30dp"
         android:gravity="center"
         android:text="Based on the speed at which you are going, change the units to something different"
         android:textColor="#fff"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="Unit App"
+        android:text="17"
         android:textColor="#fff"
-        android:textSize="25sp" />
-
-    <Button
-        android:id="@+id/mph"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/ftpsec"
-        android:layout_alignBottom="@+id/ftpsec"
-        android:layout_centerHorizontal="true"
-        android:text="mph" />
-
-    <Button
-        android:id="@+id/ftpsec"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/overview"
-        android:layout_marginTop="16dp"
-        android:layout_toRightOf="@+id/title"
-        android:text="ft/s" />
-
+        android:textSize="20sp" />
+    
     <TextView
         android:id="@+id/unit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/mph"
-        android:layout_alignBottom="@+id/mph"
-        android:layout_toLeftOf="@+id/title"
-        android:text="  mph"
+        android:text="mph"
         android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/number"
+    
+    <Button
+        android:id="@+id/mph"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/unit"
-        android:layout_alignBottom="@+id/unit"
-        android:layout_toLeftOf="@+id/unit"
-        android:text="17"
-        android:textColor="#fff"
-        android:textSize="20sp" />
-
-</RelativeLayout>
+        android:text="mph" />
+	
+    <Button
+        android:id="@+id/ftpsec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="17dp"
+        android:text="ft/s" />
+    
+</FrameLayout>
