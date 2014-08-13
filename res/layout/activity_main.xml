@@ -9,57 +9,6 @@
     android:background="#444"
     tools:context="com.example.unitapp.MainActivity" >
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Unit App"
-        android:textColor="#fff"
-        android:textSize="25sp" 
-        />
-
-     <TextView
-         android:id="@+id/overview"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_below="@+id/title"
-         android:layout_centerHorizontal="true"
-         android:layout_marginTop="28dp"
-         android:text="Based on the speed at which you are going, change the units to something different"
-         android:gravity="center"
-         android:textColor="#fff"
-         android:textSize="20sp" />
-
-     <TextView
-         android:id="@+id/number"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignLeft="@+id/overview"
-         android:layout_below="@+id/overview"
-         android:layout_marginLeft="20dp"
-         android:layout_marginTop="44dp"
-         android:text="17"
-         android:textColor="#fff"
-         android:textSize="20sp" />
-
-     <Button
-         android:id="@+id/mph"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_below="@+id/number"
-         android:layout_marginTop="73dp"
-         android:layout_toLeftOf="@+id/title"
-         android:text="mph" />
-
-     <Button
-         android:id="@+id/ftpsec"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignBottom="@+id/mph"
-         android:layout_alignRight="@+id/title"
-         android:text="ft/s" />
-
      <TextView
          android:id="@+id/unit"
          android:layout_width="wrap_content"
@@ -70,5 +19,56 @@
          android:layout_toRightOf="@+id/number"
          android:text="mph"
          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <Button
+         android:id="@+id/mph"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/unit"
+         android:layout_alignBottom="@+id/unit"
+         android:layout_alignRight="@+id/title"
+         android:text="mph" />
+
+     <Button
+         android:id="@+id/ftpsec"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/mph"
+         android:layout_alignBottom="@+id/mph"
+         android:layout_alignRight="@+id/overview"
+         android:text="ft/s" />
+
+     <TextView
+         android:id="@+id/overview"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/title"
+         android:layout_centerHorizontal="true"
+         android:gravity="center"
+         android:text="Based on the speed at which you are going, change the units to something different"
+         android:textColor="#fff"
+         android:textSize="20sp" />
+
+     <TextView
+         android:id="@+id/number"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/overview"
+         android:layout_below="@+id/overview"
+         android:layout_marginLeft="16dp"
+         android:layout_marginTop="17dp"
+         android:text="17"
+         android:textColor="#fff"
+         android:textSize="20sp" />
+
+     <TextView
+         android:id="@+id/title"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:text="Unit App"
+         android:textColor="#fff"
+         android:textSize="25sp" />
     
 </RelativeLayout>
