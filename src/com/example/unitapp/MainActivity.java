@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
 				unit.setText("mph");
 				if (!isMph) {
 					speed = Integer.parseInt((String) spd.getText());
-					speed = (int) (speed * 0.681818);
+					speed = (int) Math.round(speed * 0.681818);
 					spd.setText(Integer.toString(speed));
 					isMph = true;
 				}
@@ -49,7 +49,7 @@ public class MainActivity extends Activity {
 				unit.setText("ft/sec");
 				if (isMph) {
 					speed = Integer.parseInt((String) spd.getText());
-					speed = (int) (speed * 1.4666);
+					speed = (int) Math.round(speed * 1.4666);
 					spd.setText(Integer.toString(speed));
 					isMph = false;
 				}
