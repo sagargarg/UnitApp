@@ -70,15 +70,5 @@
          android:layout_toRightOf="@+id/number"
          android:text="mph"
          android:textAppearance="?android:attr/textAppearanceMedium" />
-
-     <EditText
-         android:id="@+id/editText1"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignLeft="@+id/number"
-         android:layout_below="@+id/number"
-         android:layout_marginTop="15dp"
-         android:ems="10"
-         android:inputType="number" />
     
 </RelativeLayout>
