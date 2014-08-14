@@ -29,8 +29,8 @@ public final class R {
         public static final int Space1=0x7f080001;
         public static final int Space2=0x7f080002;
         public static final int action_settings=0x7f08000b;
-        public static final int expandableListView1=0x7f080009;
-        public static final int expandableListView2=0x7f08000a;
+        public static final int expandableListView1=0x7f08000a;
+        public static final int expandableListView2=0x7f080009;
         public static final int ftpsec=0x7f080008;
         public static final int mph=0x7f080007;
         public static final int number=0x7f080005;

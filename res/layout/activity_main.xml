@@ -81,20 +81,20 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="130dp"
         android:layout_marginLeft="225dp" />
-    
-    <ExpandableListView
-        android:id="@+id/expandableListView1"
-        android:layout_width="150dp"
-        android:layout_height="match_parent"
-        android:layout_marginTop="200dp" >
-    </ExpandableListView>
 
     <ExpandableListView
         android:id="@+id/expandableListView2"
-        android:layout_width="150dp"
-        android:layout_height="match_parent"
+        android:layout_width="145dp"
+        android:layout_height="260dp"
         android:layout_gravity="right"
-        android:layout_marginTop="200dp" >
+        android:layout_marginTop="180dp" >
+    </ExpandableListView>
+
+    <ExpandableListView
+        android:id="@+id/expandableListView1"
+        android:layout_width="145dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="180dp" >
     </ExpandableListView>
     
 </FrameLayout>
