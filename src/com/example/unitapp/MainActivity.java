@@ -81,7 +81,7 @@ public class MainActivity extends Activity {
     }
     
     public void prepareDistView(List<String> l, HashMap<String, List<String>> h) {
-    	l.add("Distance Unit");
+    	l.add("Distance");
     	List<String> dUnit = new ArrayList<String> ();
     	dUnit.add("miles");
     	dUnit.add("kiometers");
@@ -94,7 +94,7 @@ public class MainActivity extends Activity {
     }
     
     public void prepareTimeView(List<String> l, HashMap<String, List<String>> h) {
-    	l.add("Time Unit");
+    	l.add("Time");
     	List<String> tUnit = new ArrayList<String> ();
     	tUnit.add("hour");
     	tUnit.add("minute");
