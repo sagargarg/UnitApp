@@ -84,18 +84,16 @@
     
     <ExpandableListView
         android:id="@+id/expandableListView1"
-        android:layout_width="167dp"
+        android:layout_width="150dp"
         android:layout_height="match_parent"
-        android:layout_marginLeft="-10dp"
         android:layout_marginTop="200dp" >
     </ExpandableListView>
 
     <ExpandableListView
         android:id="@+id/expandableListView2"
-        android:layout_width="167dp"
+        android:layout_width="150dp"
         android:layout_height="match_parent"
         android:layout_gravity="right"
-        android:layout_marginLeft="-10dp"
         android:layout_marginTop="200dp" >
     </ExpandableListView>
     
