@@ -1,11 +1,16 @@
 package com.example.unitapp;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ExpandableListView;
 import android.widget.TextView;
 
 
@@ -17,6 +22,7 @@ public class MainActivity extends Activity {
 	public static int speed;
 	public static TextView spd;
 	public static TextView unit;
+	public static ExpandableListView dist, time;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +63,45 @@ public class MainActivity extends Activity {
     	};
     	fpsShow.setOnClickListener(fpsListener);
     	
+    	// add stuff to the list view
+    	dist = (ExpandableListView) findViewById(R.id.distance);
+    	time = (ExpandableListView) findViewById(R.id.time);
+    	
+    	List<String> distDataHeader = new ArrayList<String> ();
+    	HashMap<String, List<String>> distDataChild = new HashMap<String, List<String>> ();
+    	prepareDistView(distDataHeader, distDataChild);
+    	ExpandableListAdapter distAdapter = new ExpandableListAdapter(this, distDataHeader, distDataChild);
+        dist.setAdapter(distAdapter);
         
+        List<String> timeDataHeader = new ArrayList<String> ();
+    	HashMap<String, List<String>> timeDataChild = new HashMap<String, List<String>> ();
+    	prepareTimeView(timeDataHeader, timeDataChild);
+    	ExpandableListAdapter timeAdapter = new ExpandableListAdapter(this, timeDataHeader, timeDataChild);
+        time.setAdapter(timeAdapter);
+    }
+    
+    public void prepareDistView(List<String> l, HashMap<String, List<String>> h) {
+    	l.add("Distance Unit");
+    	List<String> dUnit = new ArrayList<String> ();
+    	dUnit.add("miles");
+    	dUnit.add("kiometers");
+    	dUnit.add("feet");
+    	dUnit.add("meters");
+    	dUnit.add("inches");
+    	dUnit.add("centimeters");
+    	dUnit.add("milimeters");
+    	h.put(l.get(0), dUnit);
+    }
+    
+    public void prepareTimeView(List<String> l, HashMap<String, List<String>> h) {
+    	l.add("Time Unit");
+    	List<String> tUnit = new ArrayList<String> ();
+    	tUnit.add("hour");
+    	tUnit.add("minute");
+    	tUnit.add("second");
+    	tUnit.add("day");
+    	tUnit.add("week");
+    	h.put(l.get(0), tUnit);
     }
 
 

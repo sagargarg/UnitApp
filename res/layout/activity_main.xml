@@ -83,7 +83,7 @@
         android:layout_marginLeft="225dp" />
 
     <ExpandableListView
-        android:id="@+id/expandableListView2"
+        android:id="@+id/distance"
         android:layout_width="145dp"
         android:layout_height="260dp"
         android:layout_gravity="right"
@@ -91,7 +91,7 @@
     </ExpandableListView>
 
     <ExpandableListView
-        android:id="@+id/expandableListView1"
+        android:id="@+id/time"
         android:layout_width="145dp"
         android:layout_height="260dp"
         android:layout_marginTop="180dp" >
