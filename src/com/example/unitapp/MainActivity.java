@@ -9,8 +9,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ExpandableListView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 
@@ -22,7 +24,7 @@ public class MainActivity extends Activity {
 	public static int speed;
 	public static TextView spd;
 	public static TextView unit;
-	public static ExpandableListView dist, time;
+	public static ListView dist, time;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,19 +66,15 @@ public class MainActivity extends Activity {
     	fpsShow.setOnClickListener(fpsListener);
     	
     	// add stuff to the list view
-    	dist = (ExpandableListView) findViewById(R.id.distance);
-    	time = (ExpandableListView) findViewById(R.id.time);
+    	dist = (ListView) findViewById(R.id.distance);
+    	time = (ListView) findViewById(R.id.time);
     	
-    	List<String> distDataHeader = new ArrayList<String> ();
-    	HashMap<String, List<String>> distDataChild = new HashMap<String, List<String>> ();
-    	prepareDistView(distDataHeader, distDataChild);
-    	ExpandableListAdapter distAdapter = new ExpandableListAdapter(this, distDataHeader, distDataChild);
+    	String[] dists = new String[] {"miles", "kilometers", "feet", "meters", "inches", "centimeters", "milimeters"};
+    	ArrayAdapter<String> distAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dists);
         dist.setAdapter(distAdapter);
         
-        List<String> timeDataHeader = new ArrayList<String> ();
-    	HashMap<String, List<String>> timeDataChild = new HashMap<String, List<String>> ();
-    	prepareTimeView(timeDataHeader, timeDataChild);
-    	ExpandableListAdapter timeAdapter = new ExpandableListAdapter(this, timeDataHeader, timeDataChild);
+    	String[] times = new String[] {"hour", "minute", "second", "day", "week"};
+    	ArrayAdapter<String> timeAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, times);
         time.setAdapter(timeAdapter);
     }
     
