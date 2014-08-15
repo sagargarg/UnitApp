@@ -87,17 +87,17 @@
         android:id="@+id/distance-label"
         android:layout_width="145dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="180dp"
         android:textColor="#fff"
         android:textSize="30sp"
         android:gravity="center" />
     
     <TextView
-        android:text="Distance"
+        android:text="Time"
         android:id="@+id/time-label"
         android:layout_width="145dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="180dp"
         android:textColor="#fff"
         android:textSize="30sp"
         android:layout_gravity="right"
