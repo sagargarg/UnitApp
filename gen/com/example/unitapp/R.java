@@ -29,15 +29,17 @@ public final class R {
         public static final int Space1=0x7f080001;
         public static final int Space2=0x7f080002;
         public static final int Space3=0x7f080003;
-        public static final int action_settings=0x7f08000e;
-        public static final int distance=0x7f08000b;
+        public static final int action_settings=0x7f080010;
+        public static final int distance=0x7f08000c;
+        public static final int distance-label=0x7f08000a;
         public static final int ftpsec=0x7f080009;
-        public static final int lblListHeader=0x7f08000c;
-        public static final int lblListItem=0x7f08000d;
+        public static final int lblListHeader=0x7f08000e;
+        public static final int lblListItem=0x7f08000f;
         public static final int mph=0x7f080008;
         public static final int number=0x7f080006;
         public static final int overview=0x7f080005;
-        public static final int time=0x7f08000a;
+        public static final int time=0x7f08000d;
+        public static final int time-label=0x7f08000b;
         public static final int title=0x7f080004;
         public static final int unit=0x7f080007;
     }
